@@ -13,8 +13,12 @@ class Parc:
         self.liste_voitures=[]
     def entrer_voiture(self, voiture):
         if voiture in self.liste_voitures:
-            print("la voiture existe dans le parc")
+            print("la voiture existe dans le parc on ne peut pas la rajouter")
+        elif len(self.liste_voitures)>=self.capacite:
+            print("la capacité du parc est atteinte")
         else:
             self.liste_voitures.append(voiture)
+
+
 
 
