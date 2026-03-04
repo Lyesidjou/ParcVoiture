@@ -18,6 +18,13 @@ class Parc:
             print("la capacité du parc est atteinte")
         else:
             self.liste_voitures.append(voiture)
+    def sortir_voiture(self, voiture):
+        if voiture in self.liste_voitures:
+            self.liste_voitures.remove(voiture)
+            print("la voiture est sortie du parc")
+        else:
+            print("la voiture n'existe pas dans le parc")
+
 
 
 
