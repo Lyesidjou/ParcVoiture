@@ -18,6 +18,7 @@ class Parc:
             print("la capacité du parc est atteinte")
         else:
             self.liste_voitures.append(voiture)
+            print(f"le nombre de places maintenant est de {self.CalculerNbrPlacesLibres()}")
     def sortir_voiture(self, voiture):
         if voiture in self.liste_voitures:
             self.liste_voitures.remove(voiture)
