@@ -22,6 +22,7 @@ class Parc:
         if voiture in self.liste_voitures:
             self.liste_voitures.remove(voiture)
             print("la voiture est sortie du parc")
+            print(f"le nombre de places maintenant est de {self.CalculerNbrPlacesLibres()}")
         else:
             print("la voiture n'existe pas dans le parc")
     def CalculerNbrPlacesLibres(self):
