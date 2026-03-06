@@ -28,6 +28,15 @@ class Parc:
             print("la voiture n'existe pas dans le parc")
     def CalculerNbrPlacesLibres(self):
         return self.capacite - len(self.liste_voitures)
+parc01=Parc("TO2026","2450 Rue Yonge",3)
+v1=Voiture("GVHE234","TOYOTA","NOIRE")
+v2=Voiture("Gsft543","HONDA","BLAMCHE")
+v3=Voiture("XWX089","NISSAN","ROUGE")
+parc01.entrer_voiture(v1)
+parc01.entrer_voiture(v2)
+parc01.entrer_voiture(v3)
+parc01.sortir_voiture(v1)
+
 
 
 
